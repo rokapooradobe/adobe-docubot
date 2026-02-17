@@ -86,7 +86,7 @@ function buildSearchUrls(question) {
   // Logging & Debugging section
   if (lowerQuestion.match(/\b(log|logging|debug|monitor|troubleshoot|trace)\b/)) {
     urls.push(
-      guidesBase + 'application_logging/'
+      guidesBase + 'application_logging/logging'
     );
   }
   
