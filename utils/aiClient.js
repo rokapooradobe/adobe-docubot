@@ -84,7 +84,7 @@ Guidelines:
 - Format responses in Slack mrkdwn (markdown)
 - Use *bold* for emphasis, \`code\` for commands, \`\`\` for code blocks
 
-If you don't know the answer from the provided docs, say so honestly and suggest where to look.`;
+IMPORTANT: Only answer based on what is explicitly covered in the provided documentation. If the docs do not contain information about the topic, say "I don't have specific documentation on this topic" and suggest checking the official ${docsName} docs directly. Do NOT make up answers, code examples, or configuration that isn't in the provided docs.`;
 
   try {
     const response = await axios.post(
