@@ -141,8 +141,8 @@ IMPORTANT: Only answer based on what is explicitly covered in the provided docum
  * @returns {object} Slack formatted response
  */
 function parseAIResponse(responseText) {
-  // Extract pro tip if present
-  const proTipMatch = responseText.match(/💡.*?[Pp]ro [Tt]ip:?\s*(.+?)(?=\n|$)/);
+  // Extract pro tip if present (with or without 💡 emoji)
+  const proTipMatch = responseText.match(/(?:💡\s*)?(?:\*{0,2})[Pp]ro [Tt]ip:?\*{0,2}:?\s*(.+?)(?=\n|$)/);
   const proTip = proTipMatch ? proTipMatch[1].trim() : null;
   
   // Extract learn more URL if present
@@ -151,7 +151,7 @@ function parseAIResponse(responseText) {
   
   // Remove pro tip and learn more from main text
   let mainText = responseText
-    .replace(/💡.*?[Pp]ro [Tt]ip:?\s*.+?(?=\n|$)/g, '')
+    .replace(/(?:💡\s*)?(?:\*{0,2})[Pp]ro [Tt]ip:?\*{0,2}:?\s*.+?(?=\n|$)/g, '')
     .replace(/📖.*?<?(https?:\/\/[^\s>]+)>?/g, '')
     .trim();
   
