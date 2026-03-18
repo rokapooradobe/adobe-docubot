@@ -23,6 +23,7 @@ const DOCS_INDEX = [
   { title: 'Storage Options State Files Database', path: '/app-builder/docs/guides/app_builder_guides/storage/' },
   { title: 'State Key-Value Store AIO State aio-lib-state TTL', path: '/app-builder/docs/guides/app_builder_guides/storage/application-state' },
   { title: 'Database Storage MongoDB DocumentDB aio-lib-db', path: '/app-builder/docs/guides/app_builder_guides/storage/database' },
+  { title: 'CDN Content Delivery Network Static Assets Edge Caching', path: '/app-builder/docs/guides/app_builder_guides/cdn/' },
   { title: 'Deployment Deploy Undeploy aio app deploy', path: '/app-builder/docs/guides/app_builder_guides/deployment/deployment' },
   { title: 'CI CD Pipeline GitHub Actions', path: '/app-builder/docs/guides/app_builder_guides/deployment/cicd-for-app-builder-apps' },
   { title: 'Credential Rotation Rotate Credentials', path: '/app-builder/docs/guides/app_builder_guides/deployment/credential-rotation' },
